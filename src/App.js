@@ -4,13 +4,20 @@ import './App.css'
 
 const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null))
+  // [null, null, null, null, null, null, null, null, null]
 
   return (
     <>
       <h1>Tic Tac Toe</h1>
-      <Square />
+      <div className="game-board">
+        {squares.map((value,index)=>{
+          return (
+            <Square />
+          )
+        })}
+      </div>
     </>
-  )
+    ) 
 }
 
 export default App
