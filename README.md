@@ -6,16 +6,23 @@ When creating a project it is important to think about organization of your code
 
 ### 📚 User Stories
 
-- As a user, I can see a three by three grid game board on the page.
+- As a user, I can see a three by three grid game board on the page. ✅
     - Branch: game-board
     - Iterate on square state variable to display square component for each element using .map
     - Use styling to set up grid
         - Set up a div for all boxes to be able to use flex box
 - 
-- As a user, I can click on a square to mark it.
-    - -Pass the current value of iterated board into Square props
-- 
-- 
+- As a user, I can click on a square to mark it. ✅
+    - Branch: mark-away
+    - create function called handleClick within square component
+    - pass current value of iterated square into square props
+    - add onClick to square which calls upon handleClick function
+    - create function handleSquares to replace null value to X
+    - handleClick takes in the index of handleSquares
+    - and updates state setSquares
+    - when user clicks on square, displays X to mark it
+    
+      
 - As a user, my partner can click on a square after me and see their mark.
 - 
 - 
