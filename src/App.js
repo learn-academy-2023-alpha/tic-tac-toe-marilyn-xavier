@@ -10,11 +10,12 @@ const App = () => {
 
   const handleSquares = (index) => { // replace the null value to an X 
     let updatedSquares = [...squares] // new array variable updatedSquares to a copy of squares array
-    if(isPlayerOne){
+    if(isPlayerOne && updatedSquares[index]=== null){
       updatedSquares[index] = "❌"   
-    }  else {
+    }  else if (!isPlayerOne && updatedSquares[index]=== null){
       updatedSquares[index] = "⭕️"
-    }
+    } 
+  
     setSquares(updatedSquares)
     setIsPlayerOne(!isPlayerOne)  
   }

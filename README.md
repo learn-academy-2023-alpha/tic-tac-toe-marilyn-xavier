@@ -35,6 +35,10 @@ When creating a project it is important to think about organization of your code
 - Now as we click on different squares, they will alternate between x and o. 
 
 - As a user, I can't click on a square that has already been marked.
+- create branch named : square-Taken
+- update handleSquares function to add condition if updatedSquare [index] === null then output will render either x or o in the square.
+- this function stops user from clicking on an square that has already been marked. 
+- 
 - 
 - 
 - As a user, when either my partner or I win the game (three squares in a row: horizontally, vertically, or diagonally) I can see a notice telling me which player won.
