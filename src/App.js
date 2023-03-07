@@ -6,11 +6,17 @@ const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null))
   // squares = [null, null, null, null, null, null, null, null, null]
   // setSquares = [null, null, null, null, null, null, null, null, null] //UPDATED WHEN CLICKED
-  
+  const [isPlayerOne,setIsPlayerOne] = useState(true);
+
   const handleSquares = (index) => { // replace the null value to an X 
     let updatedSquares = [...squares] // new array variable updatedSquares to a copy of squares array
-    updatedSquares[index] = "❌" 
+    if(isPlayerOne){
+      updatedSquares[index] = "❌"   
+    }  else {
+      updatedSquares[index] = "⭕️"
+    }
     setSquares(updatedSquares)
+    setIsPlayerOne(!isPlayerOne)  
   }
  
 

@@ -24,8 +24,16 @@ When creating a project it is important to think about organization of your code
     
       
 - As a user, my partner can click on a square after me and see their mark.
-- 
-- 
+- create branch named : next-player
+- as of current interation the "o"'s cannot be marked on the board
+- we'll  set the first move to "x" by default. 
+- Make another state and added to the handleSquare component 
+- const [isPlayerOne, setIsPlayerOne] = useState (true);
+- const [squares, setSquares] = useState(Array(9).fill(null))
+- made another state to determine which player goes next and the game's state will be saved. 
+- every time a player clicks isPlayerOne (a boolean) will flipped to determine which player goes next and the game state will  be saved.  We updated the app.js handleSquares function to flip the value of isPlayerOne. 
+- Now as we click on different squares, they will alternate between x and o. 
+
 - As a user, I can't click on a square that has already been marked.
 - 
 - 
