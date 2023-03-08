@@ -5,7 +5,11 @@ import React from 'react'
 const Square = ( {value, index, handleSquares} ) => {
   const handleClick = () => {
     handleSquares(index)
-}
+//     if(setSquares[index] || theWinner ((setSquares))) 
+//  {  return;
+//  }
+} 
+  
 
   return (
     <div className="square" onClick={handleClick}>
