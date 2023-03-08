@@ -34,7 +34,7 @@ When creating a project it is important to think about organization of your code
 - every time a player clicks isPlayerOne (a boolean) will flipped to determine which player goes next and the game state will  be saved.  We updated the app.js handleSquares function to flip the value of isPlayerOne. 
 - Now as we click on different squares, they will alternate between x and o. 
 
-- As a user, I can't click on a square that has already been marked.
+- As a user, I can't click on a square that has already been marked."✅"
 - create branch named : square-Taken
 - update handleSquares function to add condition if updatedSquare [index] === null then output will render either x or o in the square.
 - this function stops user from clicking on an square that has already been marked. 
@@ -42,7 +42,12 @@ When creating a project it is important to think about organization of your code
 - 
 - 
 - As a user, when either my partner or I win the game (three squares in a row: horizontally, vertically, or diagonally) I can see a notice telling me which player won.
-- 
+- create a branch named : find-Winner 
+- - create a function theWinner that  holds an variable array called winCombos containing an multiple arrays of the winning combinations i.e. there is a winner if there is the same letter (i.e 'X' or 'O') in boxes 0, 1, and 2 (the first combination within the arrays). 
+- create a new array with the same values as each winning combo. i.e. when i = 0 the new array of [a, b, c] is [0, 1, 2]
+- // the if statement checks if the there are 3 of the same letters for the winning combos
+  // i.e. for winning combo [0, 1, 2] it looks up the values in the squares array -> squares[0], squares[1], squares[2]
+  // since we've set the array so that index 0, 1, 2 of squares is 'X' then the if statement should evaluate to true.
 - 
 - As a user, I can't continue playing the game after the game has been won.
 - 
